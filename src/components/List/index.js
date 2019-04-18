@@ -1,31 +1,20 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket, faCheck } from '@fortawesome/free-solid-svg-icons';
 
+import './index.css';
+
 import CustomCard from '../Common/CustomCard';
+import ListFooter from '../Common/ListFooter';
+import ListItem from '../Common/ListItem';
 
 const List = () => {
   return (
-    <CustomCard
-      containerClass='list-container'
-      footer={
-        <div className='list-footer'>
-          <p>17/04/2019</p>
-          <p>R$ 100,00</p>
-        </div>
-      }
-    >
+    <CustomCard containerClass='list-container' footer={<ListFooter />}>
       <div>
         <p className='title'>Mês</p>
         <div className='list-card-body'>
-          <div className='list-card-item'>
-            <FontAwesomeIcon icon={faShoppingBasket} size='sm' />
-            <p>1 Item(s) restante</p>
-          </div>
-          <div className='list-card-item'>
-            <FontAwesomeIcon icon={faCheck} size='sm' />
-            <p>2 Item(s) comprados</p>
-          </div>
+          <ListItem icon={faShoppingBasket} text='1 Item(s) restante' />
+          <ListItem icon={faCheck} text='2 Item(s) comprados' />
         </div>
       </div>
     </CustomCard>
