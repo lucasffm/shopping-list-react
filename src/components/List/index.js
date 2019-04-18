@@ -9,7 +9,11 @@ import ListItem from '../Common/ListItem';
 
 const List = () => {
   return (
-    <CustomCard containerClass='list-container' footer={<ListFooter />}>
+    <CustomCard
+      link='/lista'
+      containerClass='list-container'
+      footer={<ListFooter />}
+    >
       <div>
         <p className='title'>Mês</p>
         <div className='list-card-body'>

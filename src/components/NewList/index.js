@@ -4,7 +4,7 @@ import CustomCard from '../Common/CustomCard';
 
 const NewList = () => {
   return (
-    <CustomCard containerClass='new-list-container'>
+    <CustomCard link='/lista' containerClass='new-list-container'>
       <div>
         <p className='title'>Adicionar Nova Lista!</p>
       </div>
